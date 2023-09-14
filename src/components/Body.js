@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./Sidebar";
-import MainContainer from "./MainContainer";
 import { useSelector } from "react-redux";
+import { Outlet } from "react-router-dom";
 
 const Body = () => {
   const { isSidebarOpen } = useSelector((store) => store.app);
@@ -9,7 +9,7 @@ const Body = () => {
   return (
     <div className="grid grid-flow-col">
       {isSidebarOpen && <Sidebar />}
-      <MainContainer />
+      <Outlet />
     </div>
   );
 };

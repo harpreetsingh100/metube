@@ -2,7 +2,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="col-span-1 shadow-md p-4 h-[90vh] border border-green-400">
+    <div className="col-span-2 shadow-md p-4 h-[90vh] border border-green-400 w-[20%]">
       <h1 className="font-bold my-2"> Trending</h1>
       <ul className="mt-2 cursor-pointer">
         <li>Music</li>
